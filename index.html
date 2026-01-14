@@ -1,90 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Generation Brasil">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thaís Campos Silva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Meu Perfil</title>
 </head>
 
 <body>
-    <header>
+
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-links">
+       <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-photo">
+        <img src="./assets/img/Eugeneretion.jpg" alt="Foto de Thaís Campos">
+      </div>
+
+      <div class="hero-text">
         <h1>Thaís Campos Silva</h1>
+        <h2>Sobre mim</h2>
+        <p>
+          Desenvolvedora Front-End em formação Full Stack, com experiência em HTML,
+          CSS, JavaScript e integração de APIs REST. Tenho background em gestão e
+          organização de processos, o que contribui para entregas mais estruturadas
+          e colaborativas.
+        </p>
+      </div>
+    </section>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <section class="skills">
+      <h2>Skills & Tecnologias</h2>
 
-    </header>
+      <div class="skills-columns">
 
-    <main>
-        <section id="about">
+        <!-- COLUNA 1 -->
+        <div class="skills-column">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML</span>
+            </div>
 
-            <h2>Sobre mim</h2>
+            <div class="skill-card">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
 
-            <article>
+            <div class="skill-card">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
 
-                <img src="./assets/img/Eugeneretion.jpg" alt="Foto do criador desse conteúdo" />
+              <div class="skill-card">
+              <i class="fa-solid fa-plug"></i>
+              <span>APIs REST</span>
+            </div>
+          </div>
+        </div>
 
-<p>
+        <!-- COLUNA 2 -->
+        <div class="skills-column">
+          <h3>Em aprendizado</h3>
 
-    Atualmente, estou ampliando meus conhecimentos no Bootcamp Full Stack JavaScript da Generation
-    Brasil, estudando Node.js, TypeScript, SQL, NestJS e React. Busco uma oportunidade como
-    Desenvolvedora Júnior, onde eu possa aprender continuamente, entregar valor e crescer junto
-    com a equipe.
-</p>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fa-solid fa-code"></i>
+              <span>TypeScript</span>
+            </div>
 
-            </article>
+            <div class="skill-card">
+              <i class="fa-brands fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
 
-        </section>
+            <div class="skill-card">
+              <i class="fa-solid fa-server"></i>
+              <span>NestJS</span>
+            </div>
 
-        <section id="video">
+            <div class="skill-card">
+              <i class="fa-brands fa-react"></i>
+              <span>React</span>
+            </div>
 
-            <h2>Meu video favorito:</h2>
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <span>SQL</span>
+            </div>
 
-            <figure>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8mei6uVttho?si=ZDdXxiMsmdImYO2r"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </figure>
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
 
-        </section>
 
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <section>
 
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="Linkedin" />
-            </a>
 
-            <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
-            </a>
+    <section class="projetos">
+      <h2>Projetos</h2>
 
-            <a href="https://www.instagram.com/tatacampooss?igsh=bWY5aXR0MWcwdTVo&utm_source=qr">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
-            </a>
+      <div class="projetos-grid">
 
-        </section>
+        <article class="project-card">
+          <img src="./assets/img/clima.png" alt="App de Clima" class="project-img">
+          <h3>Clima Tempo</h3>
+          <span> JavaScript • API</span>
+          <div class="project-links">
+            <a href="https://climatempo-api.netlify.app/" target="_blank">Demo</a>
+            <a href="https://github.com/Thais-Campos/clima_tempo" target="_blank">GitHub</a>
+          </div>
+        </article>
 
-        <h3>
-              Desenvolvido por Thaís Campos © 2026
-        </h3>
+        <article class="project-card">
+          <img src="./assets/img/conversor.png" alt="Conversor de Moedas" class="project-img">
+          <h3>Conversor de Moedas</h3>
+          <span>HTML • CSS • JavaScript</span>
+          <div class="project-links">
+            <a href="https://conversor-de-moedas-thaiscampos.netlify.app/" target="_blank">Demo</a>
+            <a href="https://github.com/Thais-Campos/CONVERSOR" target="_blank">GitHub</a>
+          </div>
+        </article>
 
-    </footer>
+        <article class="project-card">
+          <img src="./assets/img/lista.png" alt="Lista de Tarefas" class="project-img">
+          <h3>Lista de Tarefas</h3>
+          <span>HTML • CSS • JavaScript</span>
+          <div class="project-links">
+            <a href="https://lista-de-tarefas-thaiscampos.netlify.app/" target="_blank">Demo</a>
+            <a href="https://github.com/Thais-Campos/listaDeTarefas-terceiroProjeto" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="./assets/img/contabilidade.png" alt="Site de Contabilidade" class="project-img">
+          <h3>Site de Contabilidade</h3>
+          <span>HTML • CSS • JavaScript</span>
+          <div class="project-links">
+            <a href="https://sitedecontabilidade-thais-campos.netlify.app/" target="_blank">Demo</a>
+            <a href="https://github.com/Thais-Campos/siteContabilidade-quartoProjeto" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 — Thaís Campos</p>
+  </footer>
 
 </body>
 
