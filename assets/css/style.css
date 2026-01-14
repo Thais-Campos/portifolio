@@ -436,3 +436,30 @@ body {
     justify-content: center;
   }
 }
+/* Projetos: carrossel horizontal só no mobile */
+@media (max-width: 768px) {
+  .projetos-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 95%;
+    gap: 1rem;
+
+    overflow-x: auto;
+    padding-bottom: 0.75rem;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .project-card {
+    scroll-snap-align: start;
+  }
+
+  /* opcional: esconde a barra de rolagem (sem desabilitar) */
+  .projetos-grid::-webkit-scrollbar {
+    height: 0;
+  }
+  .projetos-grid {
+    scrollbar-width: none;
+  }
+}
